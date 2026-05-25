@@ -1,0 +1,24 @@
+[package]
+name = "book-reader"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+console_error_panic_hook = "0.1.7"
+leptos = { version = "0.8.19", features = ["csr"] }
+wasm-bindgen = "0.2.121"
+wasm-bindgen-futures = "0.4.71"
+web-sys = { version = "0.3.98", features = [
+    "File",
+    "FileList",
+    "SpeechSynthesis",
+    "SpeechSynthesisUtterance",
+    "SpeechSynthesisVoice",
+    "HtmlInputElement",
+    "FileReader",
+    "Storage",
+    "HtmlInputElement"
+] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde-wasm-bindgen = "0.6.5"
+regex = "1.12.3"
