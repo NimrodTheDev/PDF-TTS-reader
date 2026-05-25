@@ -32,7 +32,7 @@ jobs:
         run: cargo install trunk
 
       - name: Build
-        run: trunk build --release --public-url /
+        run: trunk build --release
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
